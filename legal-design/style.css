@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #000;
+  display: flex;
+
+  color: #fff;
+  padding: 4rem 4rem 4rem 0;
+  min-height: 100vh;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+}
+
+aside {
+  width: 40%;
+  height: 90hv;
+}
+
+aside img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.box {
+  background-color: #404040;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.box:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.dark-box {
+  background-color: #202020;
+  margin-bottom: auto;
+}
+
+.logo {
+  background-color: #fff;
+  border-radius: 35px;
+  display: inline-flex;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  height: 80px;
+  width: 80px;
+  margin-right: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+h3 {
+  color: #6f6f6f;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.text {
+  width: 300px;
+}
+
+.fa-chevron-right {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    flex-direction: column;
+    padding-right: 0;
+  }
+  main,
+  aside {
+    height: auto;
+    width: 100%;
+  }
+}
